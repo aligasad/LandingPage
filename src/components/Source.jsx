@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import promiseImg from '../assets/logo.png'; // Replace with your actual image path
+import promiseImg from '../assets/source.png';
 
 const data = {
   heading: "What We Source",
@@ -28,7 +28,7 @@ const data = {
   ],
   btn: "Our Sources",
   imgSrc: promiseImg,
-  imgSize: "70%",
+  imgSize: "50%",
   backgroundColor: "#F5F5F5",
   headingColor: "#407903",
   textColor: "#395b4b",
@@ -63,7 +63,7 @@ const Source = () => {
   return (
     <section
       className="section"
-      style={{ backgroundColor: data.backgroundColor }}
+      style={{ backgroundColor: data.backgroundColor, width: '100%' }}
     >
       <div>
         <motion.h3

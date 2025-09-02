@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import promiseImg from '../assets/logo.png'; // Replace with your actual image path
+import promiseImg from '../assets/locations.png';
 
 const data = {
   heading: "How Zaphira Works",
@@ -59,7 +59,7 @@ const Section2 = () => {
   return (
     <section
       className="section"
-      style={{ backgroundColor: data.backgroundColor }}
+      style={{ backgroundColor: data.backgroundColor, width: '100%' }}
     >
       <div>
         <motion.h3

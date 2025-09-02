@@ -1,5 +1,3 @@
-import React from "react";
-
 const Footer = () => {
   const footerLinks = (element) => {
     const allFooterLinks = document.querySelectorAll(".footerLinks");
@@ -49,7 +47,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer>
+      <footer style={{width: '100%'}}>
         <h1>
           Let's
           <br />
@@ -109,18 +107,18 @@ const Footer = () => {
 
         <div>
           <h5>Email</h5>
-          <a href="mailto: info@mbachaiwala.com">Info@mbachaiwala.com</a>
-          <a href="mailto: franchise@mbachaiwala.com">
-            Franchise@mbachaiwala.com
+          <a href="mailto: info@thezaphira.com">Info@thezaphira.com</a>
+          <a href="mailto: office@thezaphira.com">
+            office@thezaphira.com
           </a>
         </div>
 
         <div>
           <h5>Phone</h5>
-          <a href="tel: +91722905222">+91722905222</a>
+          <a href="tel: +917518202507">+917518202507</a>
         </div>
 
-        <p>© COPYRIGHT 2022 MBA CHAIWALA. MADE BY</p>
+        <p>© COPYRIGHT 2025 The Zaphira. MADE BY</p>
       </footer>
       <div className="footer"></div>
     </>

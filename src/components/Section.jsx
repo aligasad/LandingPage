@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import SectionImg from '../assets/SectionImg.png'
+import SectionImg from '../assets/farmto.png'
 
 const data = {
   heading: "From Farms to Your Home-No Middlemen. Only Trust.",
@@ -63,9 +63,9 @@ const Section = () => {
 
   return (
     <section
-      className="section"
+      className="sectionT"
       style={{
-        backgroundColor: data.backgroundColor,
+        backgroundColor: data.backgroundColor, width: '100%'
       }}
     >
       <div>

@@ -20,13 +20,21 @@ import tempImg from "./assets/logo.png"
 import "./styles/App.scss";
 import "./styles/intro.scss";
 import "./styles/section.scss";
+import "./styles/sectionT.scss";
 import "./styles/footer.scss";
 import "./styles/misc.scss";
 import "./styles/mediaQuery.scss";
+import "./styles/quality.scss"
+import "./styles/nomiddle.scss"
+import "./styles/promise.scss"
+
 import Section1 from "./components/Section1";
 import Section2 from "./components/Works";
 import Source from "./components/Source";
 import Subscription from "./components/Subscription";
+import NoMiddleman from "./components/NoMiddleman";
+import Quality from "./components/Quality";
+import Delivary from "./components/Delivary";
 
 const yellow = "#fff100",
   pink = "#ed1e79",
@@ -88,7 +96,9 @@ function App() {
       <Section2 />
       <Source />
       <Subscription />
-      
+      <NoMiddleman />
+      <Quality />
+      <Delivary />
       {/* FreshTopic - 2 */}
       
       <Footer />
