@@ -1,0 +1,181 @@
+.launch-banner {
+  display: flex;
+  width: 100%;
+  min-height: 320px;
+  background: linear-gradient(135deg, #00a63e, #ff3c00);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+
+  .left {
+    flex: 1;
+    position: relative;
+    background: #000;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+
+    .side-title {
+        position: absolute;
+        left: 5rem;
+        top: 3rem;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      span {
+        color: #00a63e;
+        font-style: italic;
+      }
+    }
+
+    .date-card {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2rem;
+
+      div {
+        background: #111;
+        border: 1px solid #00a63e;
+        color: #fff;
+        padding: 0.7rem 1.2rem;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(255, 115, 0, 0.6);
+
+        span {
+          font-size: 0.75rem;
+          font-weight: bold;
+          display: block;
+          margin-bottom: 0.3rem;
+        }
+
+        h2 {
+          margin: 0;
+          font-size: 1.6rem;
+          color: #00a63e;
+        }
+      }
+    }
+
+    .countdown {
+      display: flex;
+      gap: 1rem;
+
+      div {
+        background: #00a63e;
+        color: #fff;
+        padding: 0.6rem 1rem;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+
+        h2 {
+          margin: 0;
+          font-size: 1.4rem;
+        }
+        span {
+          font-size: 0.8rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .right {
+    flex: 2;
+    padding: 3rem;
+    background: linear-gradient(135deg, #00a63e, #016630);
+    position: relative;
+
+    .soon {
+      font-family: "Pacifico", cursive;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      position: relative;
+
+      .underline {
+        display: block;
+        height: 3px;
+        width: 80px;
+        background: #fff;
+        margin-top: 5px;
+        animation: grow 2s infinite alternate;
+      }
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .link {
+      color: #fff;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .address {
+      background: #fff;
+      color: #000;
+      margin: 0.4rem 0;
+      padding: 0.6rem;
+      border-radius: 6px;
+      font-weight: 500;
+      width: 15rem;
+    }
+    .address1 {
+      background: #fff;
+      color: #000;
+      margin: 0.4rem 0;
+      padding: 0.6rem;
+      border-radius: 6px;
+      font-weight: 500;
+      width: 7rem;
+    }
+
+    .contacts {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+
+      p {
+        background: rgba(0, 0, 0, 0.2);
+        padding: 0.4rem 0.8rem;
+        border-radius: 5px;
+        font-size: 0.9rem;
+      }
+    }
+
+    .phone {
+      writing-mode: vertical-rl;
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-weight: bold;
+      font-size: 1rem;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+    .phoneC {
+        font-size: 0.7rem;
+        color: #000;
+    }
+  }
+}
+
+@keyframes grow {
+  from {
+    width: 40px;
+  }
+  to {
+    width: 120px;
+  }
+}

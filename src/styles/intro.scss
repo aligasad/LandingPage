@@ -1,15 +1,27 @@
+@import "colors";
 .intro {
-  height: calc(100vh - 50px);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 
   video {
     width: 100%;
-    margin-top: -50px;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
   }
 
-  div {
+  .poster-wrapper {
     width: 100%;
-    height: calc(100vh - 50px);
+    height: 100%;
     position: absolute;
-    top: 0%;
+    top: 0;
+  }
+  h3 {
+    width: 100%;
+    font: 300 54px $heading;
+    color: red;
+    margin-bottom: 15rem;
   }
 }

@@ -28,7 +28,7 @@ const data = {
   backgroundColor: "#db7093",
   headingColor: "#407903",
   textColor: "#395b4b",
-  btnBgColor: "#DEB887",
+  btnBgColor: "#407903",
   btnColor: "#20B2AA",
 };
 
@@ -63,8 +63,8 @@ const Quality = () => {
 
   return (
     <section
-      className="quality"
-      style={{ backgroundColor: data.backgroundColor, width: '100%' }}
+      className="section"
+      style={{ backgroundColor: data.backgroundColor, height: '95vh' }}
     >
       <div>
         <motion.h3

@@ -70,6 +70,8 @@
   }
 
   .intro {
-    display: none;
+    // display: none;
+    height: 100vh;
+    overflow: hidden;
   }
 }

@@ -59,7 +59,7 @@ const Section2 = () => {
   return (
     <section
       className="section"
-      style={{ backgroundColor: data.backgroundColor, width: '100%' }}
+      style={{ backgroundColor: data.backgroundColor, height: '107vh', paddingTop: '5rem' }}
     >
       <div>
         <motion.h3
@@ -71,13 +71,13 @@ const Section2 = () => {
         </motion.h3>
 
         <motion.ul
-          style={{ color: data.textColor, textAlign: "left", fontSize: "19px", fontFamily: "Montserrat, sans-serif", lineHeight: "1.9", margin: "0 auto", width: "80%" }}
-          data-cursorpointer={true}
+          style={{ color: data.textColor, textAlign: "left", fontSize: "19px", fontFamily: "Montserrat, sans-serif", lineHeight: "1.9", margin: "0 auto", width: "90%" }}
+          
           {...listOptions}
         >
           {data.points.map((data, idx) => (
-            <li key={idx} style={{ marginBottom: "1rem" }}>
-              <span style={{fontWeight: 'bolder', color: 'black'}}>{data.heading}: </span> <span>{data.content}</span>
+            <li key={idx} style={{ marginBottom: "1rem", fontSize: '1.1rem' }}>
+              <span style={{fontWeight: 'bolder', color: 'black'}} data-cursorpointer={true}>{data.heading}: </span> <span data-cursorpointer={true}>{data.content}</span>
             </li>
           ))}
         </motion.ul>

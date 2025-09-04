@@ -68,7 +68,7 @@ const Subscription = () => {
   return (
     <section
       className="section"
-      style={{ backgroundColor: data.backgroundColor, width: '100%' }}
+      style={{ backgroundColor: data.backgroundColor, height: '124vh', paddingTop: '8rem' }}
     >
       <div>
         <motion.h3

@@ -1,43 +1,26 @@
 import { motion } from "framer-motion";
-import promiseImg from "../assets/promise.png";
+import promiseImg from "../assets/logo.png";
 
 const data = {
-  heading: "Our Promise",
+  heading: "Why Zaphira",
+  subheading: "Skip the re-ordering grind. Pause/skip anytime.",
   points: [
-    {
-      heading: "Direct Procurement",
-      content: "100% middleman-free supply chain.",
-    },
-    {
-      heading: "Traceable Quality",
-      content: "Scan a QR on every pack to see farm source, batch, and date.",
-    },
-    {
-      heading: "Cold-Chain Care",
-      content: "Chilled from harvest to handover for peak nutrition & taste.",
-    },
-    {
-      heading: "Fair to Farmers",
-      content: "Better prices, predictable demand, and long-term partnerships.",
-    },
-    {
-      heading: "Fast Delivery",
-      content:
-        " 15-minute zones in select areas, same-day citywide, next-day nationwide*.",
-    },
+    'Fresher than "store-fresh" (less time from farm to you)',
+    "Stable, fair prices (no middlemen markups)",
+    "Cleaner labels (no unnecessary additives)",
+    " Impact-driven (farmer prosperity, less waste, local jobs)",
   ],
-  note: "*Availability varies by location; check your pincode at checkout.",
-  btn: "JOIN NOW",
-  imgSrc: promiseImg,
+  btn: "Why Choose Us ?",
   imgSize: "60%",
-  backgroundColor: "#D2B48C",
-  headingColor: "#407903",
+  imgSrc: promiseImg,
+  backgroundColor: "#fff",
+  headingColor: "#d2aa8c",
   textColor: "#395b4b",
-  btnBgColor: "#ff2705",
-  btnColor: "#20B2AA",
+  btnBgColor: "#db7093",
+  btnColor: "#db7093",
 };
 
-const Section1 = () => {
+const WhyZaphira = () => {
   const headingOptions = {
     initial: { y: "-100%", opacity: 0 },
     whileInView: { y: 0, opacity: 1 },
@@ -69,51 +52,35 @@ const Section1 = () => {
   return (
     <section
       className="section"
-      style={{ backgroundColor: data.backgroundColor, height: '92vh' }}
+      style={{ backgroundColor: data.backgroundColor, paddingTop: '11rem', height: '90vh' }}
     >
       <div>
         <motion.h3
-          style={{ color: data.headingColor, width: "100%" }}
+          style={{ color: data.headingColor }}
           data-cursorpointer={true}
           {...headingOptions}
         >
           {data.heading}
         </motion.h3>
-        <motion.h3
-          style={{
-            color: "#008B8B",
-            fontSize: "1.8rem",
-          }}
-          data-cursorpointer={true}
-          {...subHeadingOptions}
-        >
-          {data.subheading}
-        </motion.h3>
 
         <motion.ul
           style={{
-            color: data.textColor,
+            color: 'white',
             textAlign: "left",
             fontSize: "19px",
             fontFamily: "Montserrat, sans-serif",
             lineHeight: "1.9",
             margin: "0 auto",
-            width: "100%",
+            width: "70%",
           }}
-          // data-cursorpointer={true}
+          data-cursorpointer={true}
           {...listOptions}
         >
-          {data.points.map((data, idx) => (
-            <li
-              key={idx}
-              
-              style={{ marginBottom: "0.02rem", fontSize: "1.1rem" }}
-              
-            >
-              <span style={{ fontWeight: "bolder", color: "black" }} data-cursorpointer={true}>
-                {data.heading}:{" "}
-              </span>{" "}
-              <span style={{ color: "white" }} data-cursorpointer={true}>{data.content}</span>
+          {data.points.map((option, idx) => (
+            <li key={idx} style={{ marginBottom: "1rem" }}>
+              {
+                idx % 2 !== 0 ? <span style={{color: '#db7093'}} data-cursorpointer={true}>{option}</span> : <span style={{color: 'black'}} data-cursorpointer={true}>{option}</span>
+              }
             </li>
           ))}
         </motion.ul>
@@ -121,6 +88,7 @@ const Section1 = () => {
         <motion.p
           style={{
             color: data.textColor,
+            fontSize: "16px",
             fontFamily: "Montserrat, sans-serif",
             marginTop: "1rem",
             opacity: 0.8,
@@ -156,4 +124,4 @@ const Section1 = () => {
   );
 };
 
-export default Section1;
+export default WhyZaphira;

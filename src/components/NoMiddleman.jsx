@@ -51,8 +51,8 @@ const NoMiddleman = () => {
 
   return (
     <section
-      className="nomiddle"
-      style={{ backgroundColor: data.backgroundColor, width: '100%' }}
+      className="section"
+      style={{ backgroundColor: data.backgroundColor, paddingTop: '11rem', height: '90vh' }}
     >
       <div>
         <motion.h3

@@ -9,12 +9,14 @@
   transition: transform 0.3s;
   pointer-events: none;
   z-index: 1200;
+  background-color: #89bfa3;
 }
 
 .cursorHover {
   transform: scale(3);
   border: none;
   box-shadow: 0 0 10px $red;
+  background-color: transparent;
 }
 .cursorHoverMini {
   transform: scale(0.5);

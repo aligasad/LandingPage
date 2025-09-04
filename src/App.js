@@ -4,7 +4,6 @@ import Section from "./components/Section";
 import Misc from "./components/Misc";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
-import data from "./data/data.json";
 
 import freshTopicImg from "./assets/academy.png";
 import freshTopic2Img from "./assets/story.png";
@@ -27,6 +26,8 @@ import "./styles/mediaQuery.scss";
 import "./styles/quality.scss"
 import "./styles/nomiddle.scss"
 import "./styles/promise.scss"
+import "./styles/introImg.scss"
+import "./styles/LaunchBanner.scss"
 
 import Section1 from "./components/Section1";
 import Section2 from "./components/Works";
@@ -35,6 +36,11 @@ import Subscription from "./components/Subscription";
 import NoMiddleman from "./components/NoMiddleman";
 import Quality from "./components/Quality";
 import Delivary from "./components/Delivary";
+import WhyZaphira from "./components/WhyZaphira";
+import LaunchOffer from "./components/LaunchOffer";
+import IntroImage from "./components/IntroImage";
+import LaunchBanner from "./components/LaunchBanner";
+
 
 const yellow = "#fff100",
   pink = "#ed1e79",
@@ -42,17 +48,6 @@ const yellow = "#fff100",
   brown = "#6d3d0f";
 
 function App() {
-  const {
-    freshTopic,
-    freshTopic2,
-    tedTalks,
-    franchise,
-    map,
-    courses,
-    album,
-    barat,
-    chaiwala,
-  } = data;
 
   const [loading, setLoading] = useState(true);
 
@@ -90,8 +85,9 @@ function App() {
       {loading && <Loader />}
       <IntroVideo />
       
-      {/* FreshTopic */}
       <Section />
+      <LaunchOffer />
+      <LaunchBanner />
       <Section1 />
       <Section2 />
       <Source />
@@ -99,8 +95,8 @@ function App() {
       <NoMiddleman />
       <Quality />
       <Delivary />
-      {/* FreshTopic - 2 */}
-      
+      <WhyZaphira />
+      <LaunchBanner />
       <Footer />
       <Misc />
     </>

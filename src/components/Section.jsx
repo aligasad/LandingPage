@@ -63,9 +63,9 @@ const Section = () => {
 
   return (
     <section
-      className="sectionT"
+      className="section"
       style={{
-        backgroundColor: data.backgroundColor, width: '100%'
+        backgroundColor: data.backgroundColor
       }}
     >
       <div>

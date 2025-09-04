@@ -31,7 +31,7 @@ const data = {
   backgroundColor: "#D2A499",
   headingColor: "#414774",
   textColor: "#395b4b",
-  btnBgColor: "#DEB887",
+  btnBgColor: "#db7093",
   btnColor: "#20B2AA",
 };
 
@@ -67,7 +67,7 @@ const Delivary = () => {
   return (
     <section
       className="section"
-      style={{ backgroundColor: data.backgroundColor, width: '100%' }}
+      style={{ backgroundColor: data.backgroundColor, height: '120vh' }}
     >
       <div>
         <motion.h3
